@@ -25,7 +25,7 @@ class TabLink {
     // Add a click event that invokes this.selectTab
     // this.tabElement.addEventListener();
   }
-
+  
   selectTab(){
 
     // Select all elements with the .tab class on them
