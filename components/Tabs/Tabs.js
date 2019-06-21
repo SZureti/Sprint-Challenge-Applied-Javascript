@@ -14,7 +14,6 @@ class TabLink {
       // If `all` is true, select all cards regardless of their data attribute values
        this.cards = document.querySelectorAll('.card');
     } else { 
-      //if(this.tabData === false{}
       // else if `all` is false, only select the cards with matching this.tabData values
        this.cards = document.querySelectorAll(`.card[data-tab='${this.tabData}']`);
     }
@@ -24,7 +23,7 @@ class TabLink {
      this.cards = Array.from(this.cards).map(function(card){
        return new TabCard(card)
      });
-        //console.log(this.cards);
+        console.log(this.cards);
     // Add a click event that invokes this.selectTab
      this.tabElement.addEventListener('click', () => this.selectTab());
   }
@@ -58,11 +57,11 @@ class TabLink {
 class TabCard {
   constructor(cardElement){
     // Assign this.cardElement to the cardElement DOM reference
-    // this.cardElement;
+   this.cardElement = cardElement;
   }
   selectCard(){
     // Update the style of this.cardElement to display = "flex"
-    // this.cardElement;
+   this.cardElement = style.display = 'flex';
   }
 
 }
@@ -76,4 +75,8 @@ class TabCard {
 - In your .forEach() method's callback function, return a new instance of TabLink and pass in each tab as a parameter
 
 */
-let tabs = document.querySelectorAll();
+let tabs = document.querySelectorAll('.tab');
+
+tabs.forEach(function(tab){
+  return new TabLink(tab);
+});
