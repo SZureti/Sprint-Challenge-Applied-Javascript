@@ -32,11 +32,11 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
-The DOM is the live html of a web page the has been converted into JavaScript. It’s used to manipulate the HTML and create dynamic effects.
+The DOM stands for Document Object Model and it's the live html of a web page the has been converted into JavaScript. It’s used to manipulate the HTML and create dynamic effects.
 
 2. What is an event?
 
-An event os a user input. Basically an action that the user/viewer does to the webpage.
+An event is a user input. Basically an action that the user/viewer does to the webpage.
 
 3. What is an event listener?
 
